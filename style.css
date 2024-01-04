@@ -287,7 +287,7 @@ h1{
     border-radius: 20px;
     overflow: hidden;
     animation-name: aboutAnima;
-    animation-duration: 7s;
+    animation-duration: 4s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 
