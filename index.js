@@ -12,13 +12,19 @@
 function bigImg1(x) {
      // by using single css property
     document.getElementById('serviceImg1').style.cssText = "visibility: visible;";
-    // by using multiple css property
+    // by using multiple styles with cssText
     document.getElementById('serviceSection1').style.cssText = "border: none; height: 240px;";
     // inmormateUs();
 }
 function normalImg1(x) {
+    // by using single css property
     document.getElementById('serviceImg1').style.visibility = "hidden";
-    document.getElementById('serviceSection1').style.cssText = "border: 5px solid #131921; height: 200px;";
+    // by using multiple styles with setAttribute()
+    var section = document.getElementById('serviceSection1');
+    section.setAttribute(
+        "style",
+        "border: 5px solid #131921; height: 200px;"
+    );
 }
 
 function bigImg2(x) {
