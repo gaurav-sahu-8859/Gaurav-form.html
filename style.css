@@ -1,8 +1,9 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 /* body{
      overflow: hidden; 
 } */
@@ -17,6 +18,7 @@
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
+
 #nav1::before {
     /* border: 2px solid #000205; */
     /* background-color: #10437e; */
@@ -44,7 +46,7 @@
 
 nav li {
     list-style: none;
-    
+
     /* color: #cccccc; */
 }
 
@@ -90,7 +92,8 @@ nav a {
     margin: 0px;
     /* cursor: pointer; */
 }
-#navbox4{
+
+#navbox4 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,13 +101,13 @@ nav a {
     width: 1200px;
     margin-top: 10px;
 }
-   
+
 
 #navbox4 #selector {
     /* background-color: #10437e; */
     background-color: #045e6e;
     color: #ffffff;
-    font-size:18px;
+    font-size: 18px;
     border: none;
     height: 40px;
     margin-top: 10px;
@@ -113,6 +116,7 @@ nav a {
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
+
 #navbox4 #search {
     background-color: #e6e1db;
     /* display: inline; */
@@ -122,18 +126,21 @@ nav a {
     width: 190px;
     border-radius: 45px 0px 0px 45px;
 }
+
 #navbox4 #button {
     background-color: #febd69;
     /* display: inline; */
     color: #440303;
     font-size: 15px;
-    border-radius: 0px 45px 45px 0px;;
+    border-radius: 0px 45px 45px 0px;
+    ;
     color: rgb(32, 19, 5);
     height: 30px;
     width: 50px;
     border: none;
     cursor: pointer;
 }
+
 #navbox5 {
     color: #cccccc;
     display: block;
@@ -172,10 +179,10 @@ nav a {
 
 #navbox7 {
     color: #f3f3f3;
-    height:50px ;
+    height: 50px;
     width: 10%;
     padding-top: 50px;
-    
+
 }
 
 #nav2 {
@@ -201,9 +208,10 @@ nav a {
     padding-left: 25px;
     justify-content: space-between;
 }
-#login{
+
+#login {
     /* background:#01494e; */
-    background:#741e04;
+    background: #741e04;
     color: #e0a8d7;
     margin-right: 30px;
     height: 40px;
@@ -217,6 +225,7 @@ nav a {
     animation-iteration-count: infinite;
     /* animation-timing-function: ease-in-out; */
 }
+
 @keyframes nav1Anima {
     from {
         background-color: #063c7a;
@@ -226,6 +235,7 @@ nav a {
         background-color: #045e6e;
     }
 }
+
 @keyframes nav2Anima {
     from {
         background-color: #ee5a05;
@@ -235,22 +245,24 @@ nav a {
         background-color: #da1717;
     }
 }
+
 @keyframes logAnima {
     from {
-        background:#026e14;
+        background: #026e14;
     }
 
     to {
-        background:#041870;
+        background: #041870;
 
     }
 }
+
 /* about section */
 #aboutImg {
     height: 450px;
     width: 99.8%;
     /* margin-right: 0.15%; */
-    border:1px solid #413f3f;
+    border: 1px solid #413f3f;
 }
 
 #aboutComment {
@@ -260,37 +272,41 @@ nav a {
     width: 97.8%;
     display: inline-flex;
 }
-h1{
+
+h1 {
     font-size: 60px;
     text-align: center;
     color: #741e04;
-    border-bottom:2px solid #131210;
+    border-bottom: 2px solid #131210;
     padding: 5%;
     /* animation-name: aboutAnima;
     animation-duration: 6s;
     animation-iteration-count: infinite; */
 }
-#serviceSection{
+
+#serviceSection {
     height: 700px;
     width: 99.5%;
     padding-top: 5%;
     background: #ffffff;
-    border:solid #febd69;
+    border: solid #febd69;
     border-radius: 45px;
-    display: flex; 
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
 .serviceSection {
     height: 300px;
     width: 400px;
     /* border: 1px solid #131921; */
-    background-color:  #ffffff;
+    background-color: #ffffff;
     border-radius: 40px;
     /* animation-name: serviceAnima;
     animation-duration: 1s;
     animation-iteration-count: infinite; */
 }
+
 .serviceSection div {
     margin: 10% 10%;
     padding: 2%;
@@ -308,7 +324,8 @@ h1{
     animation-timing-function: ease-in-out;
 
 }
-.serviceSection div img{
+
+.serviceSection div img {
     visibility: hidden;
     margin-top: 1%;
     margin-left: 2%;
@@ -329,22 +346,25 @@ h1{
     background-color: #f3efef;
     border-radius: 30px;
 }
-.serviceSection div h2{
+
+.serviceSection div h2 {
     text-align: center;
     /* padding: 5px; */
     color: #440303;
 }
-.bigsection{
+
+.bigsection {
     height: 700px;
     width: 99.5%;
     padding-top: 5%;
     background: #131210;
-    border:solid #febd69;
+    border: solid #febd69;
     border-radius: 45px;
-    display: flex; 
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
 .imgsection {
     height: 150px;
     width: 300px;
@@ -363,6 +383,7 @@ h1{
     border: 1px solid #131921;
     border-radius: 10px;
 }
+
 @keyframes aboutAnima {
     0% {
         /* background-color: rgb(177, 113, 113); */
@@ -381,6 +402,7 @@ h1{
         transform: rotateY(0deg);
     }
 }
+
 @keyframes serviceAnima {
     from {
         background-color: #d9dce0;
@@ -436,22 +458,44 @@ footer ul li {
     height: 60%;
     width: 400px;
 }
-footer h2{
-    color: #c08831;;
+
+footer h2 {
+    color: #c08831;
+    ;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 810px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .navbox:hover {
+        border: 1px solid #cccccc;
+    }
+
+    #navbox1:hover {
+        border: 1px solid #cccccc;
+    }
     #nav1 {
         /* border: 2px solid #000205; */
         /* background-color: #10437e; */
         background-color: #045e6e;
         position: sticky;
         top: -10px;
+        margin-left: 0%;
         /* height: 80px; */
         animation-name: nav1Anima;
         animation-duration: 1s;
         animation-iteration-count: infinite;
     }
+
     #nav1::before {
         /* border: 2px solid #000205; */
         /* background-color: #10437e; */
@@ -465,66 +509,187 @@ footer h2{
         animation-duration: 1s;
         animation-iteration-count: infinite;
     }
-    
+
     #nav1 ul {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        margin-right: 2%;
+        margin-right: 0%;
         margin-top: -16px;
-        height: 100px;
+        height: 120px;
         /* overflow-x: hidden; */
     }
-    
+
     nav li {
         list-style: none;
-        
+
         /* color: #cccccc; */
     }
-    
+
+
+
     #navbox1 {
         border: none;
-        height: 98%;
+        margin-top: 1%;
+        height: 90%;
         width: auto;
-    }
-    
-    
-    .namratalogo {
-        margin-top: 10%;
-        height: 60px;
-        width: auto;
-        cursor: pointer;
-    }
-    
-    #navbox2 {
-        padding-top: 50px;
-        padding-left: 50px;
-        /* display: block; */
-        color: #b3b0b0;
-        height: 45px;
-        width: 20%;
-    }
-    .bigsection{
-        height: 2000px;
-        width: 99.5%;
-        padding-top: 5%;
-        background: #131210;
-        border:solid #febd69;
-        border-radius: 45px;
-        display: flex; 
-        justify-content: space-evenly;
-        flex-wrap: wrap;
     }
 
-    #serviceSection{
-        height: 2000px;
-        width: 99.5%;
-        padding-top: 5%;
-        background: #ffffff;
-        border:solid #febd69;
-        border-radius: 45px;
-        display: flex; 
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+
+    .namratalogo {
+        margin-top: 30%;
+        height: 30px;
+        width: auto;
     }
-  }
+
+    #navbox2 {
+        margin-top: 1%;
+        padding-top: 45px;
+        padding-left: 1%;
+        height: 90%;
+        width: 8%;
+    }
+
+    #navbox3 {
+        height: 90%;
+        /* width: 100px; */
+        padding-top: 45px;
+        padding-left: 5px;
+        margin-top: 1%;
+    }
+
+    #navbox4 {
+        display: none;
+    }
+
+    #navbox5 {
+        margin-top: 1%;
+        height: 90%;
+        padding-top: 15px;
+        padding-left: 9px;
+    }
+
+    #navbox6 {
+        width: 10%;
+        height: 90%;
+        padding-top: 45px;
+        padding-left: 2%;
+        margin-top: 1%;
+    }
+
+    #navbox7 {
+        height: 90%;
+        width: 10%;
+        padding-top: 45px;
+        padding-left: 1%;
+        margin-top: 1%;
+    }
+
+    
+    #serviceSection {
+        height: 2000px;
+    }
+    #mobileres1 #mobileres2{
+        height: 2000px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+    }
+    
+/* 
+    #nav1 {
+        top: -10px;  
+    } */
+
+    /* #nav1::before {
+        
+        background-color: #045e6e;
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        bottom: 10px;
+        animation-name: nav1Anima;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+    } */
+
+    #nav1 ul {
+        padding-right: 1%;
+        margin-left: 0.5%;
+        margin-top: -16px;
+        height: 120px;
+        /* overflow-x: hidden; */
+    }
+
+    #navbox1 {
+        border: none;
+        margin-top: 1%;
+        height: 90%;
+        width: auto;
+    }
+
+    #navbox2 {
+        margin-top: 1%;
+        padding-top: 45px;
+        padding-left: 1%;
+        height: 90%;
+        width: 8%;
+    }
+
+    #navbox3 {
+        height: 90%;
+        padding-top: 45px;
+        padding-left: 5px;
+        margin-top: 1%;
+    }
+
+    #navbox4 {
+        display: none;
+    }
+
+    #navbox5 {
+        margin-top: 1%;
+        height: 90%;
+        padding-top: 15px;
+        padding-left: 9px;
+    }
+
+    #navbox6 {
+        width: 10%;
+        height: 90%;
+        padding-top: 45px;
+        padding-left: 2%;
+        margin-top: 1%;
+    }
+
+    #navbox7 {
+        height: 90%;
+        width: 10%;
+        padding-top: 45px;
+        padding-left: 1%;
+        margin-top: 1%;
+    }
+
+    .bigsection {
+        height: 1200px;
+        /* width: 99.5%;
+        padding-top: 5%; */
+    }
+
+    #serviceSection {
+        height: 1000px;
+        /* width: 99.5%;
+        padding-top: 5%;
+        */
+    }
+}
