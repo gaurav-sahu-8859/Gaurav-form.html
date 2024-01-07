@@ -71,3 +71,9 @@ function normalImg6(x) {
     document.getElementById('serviceImg6').style.visibility = "hidden";
     document.getElementById('serviceSection6').style.cssText = "border: 5px solid #131921; height: 200px;";
 }
+ function remover1(x){
+    document.getElementById('nav1').style.position = "initial";
+ }
+function remover2(x){
+    document.getElementById('nav1').style.position = "sticky";
+}
