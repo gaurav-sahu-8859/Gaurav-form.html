@@ -563,9 +563,9 @@ footer h2 {
         padding-top: 35px;
         margin-top: 4%;
     }
-    .navbox:hover {
+/*     .navbox:hover {
         border: 1px solid #cccccc;
-    }
+    } */
 
     #nav2 {
         /* background-color: #ee5a05; */
@@ -579,9 +579,9 @@ footer h2 {
         padding-left: 2px;
         justify-content: space-between;
     }
-    #navbox1:hover {
+/*     #navbox1:hover {
         border: 1px solid #cccccc;
-    }
+    } */
     #serviceSection {
         height: 1800px;
     }
