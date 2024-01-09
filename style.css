@@ -464,16 +464,123 @@ footer h2 {
     ;
 }
 
-@media (max-width: 609px){
+@media (max-width: 650px){
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-
     body {
         height: 100%;
         width: 100%;
+    }
+    #nav1 {
+        background-color: #045e6e;
+        /* border: 1px solid #a7ce1a; */
+        width: 100%;
+        height: 100%;
+        margin-right: 0%;
+        padding-left: 0%;
+        position: sticky;
+    }
+    
+    #nav1::before {
+        /* border: 2px solid #000205; */
+        /* background-color: #10437e; */
+        background-color: #045e6e;
+        position: absolute;
+        top: 0px;
+        left: 10px;
+        bottom: 10px;  
+    }
+
+    #nav1 ul {
+        /* border: 1px solid #db0808; */
+        padding-left: 0.5%;
+        
+    }
+
+    #navbox1 {
+        margin-top: 4%;
+        height: 85%;
+    }
+    
+    .namratalogo {
+        margin-top: 40%;
+        height: 20px;
+        width: 95%;
+    }
+    #navbox2 {
+        margin-top: 4%;
+        padding-top: 35px;
+        padding-left: 0%;
+        height: 85%;
+        width: 12%;
+    }
+
+    #navbox3 {
+        height: 85%;
+        width: 88px;
+        padding-top: 35px;
+        padding-left: 3px;
+        margin-top: 4%;
+    }
+    #navbox4 {
+        display: none;
+    }
+
+    #navbox5 {
+        color: #cccccc;
+        display: block;
+        /* background-color: #10437e; */
+        background-color: #045e6e;
+        /* margin-top: 15px; */
+        padding-left: 0px;
+    }
+    
+    #navbox5 select {
+        /* background-color: #10437e; */
+        background-color: #045e6e;
+        color: #f3f3f3;
+        border: none;
+        height: 80px;
+        width: 70px;
+    }
+    
+    #navbox6 {
+        width: 12%;
+        color: #cccccc;
+        height: 85px;
+        padding-top: 35px;
+        padding-left: 0%;
+        margin-top: 4%;
+    }
+    
+    #navbox7 {
+        color: #f3f3f3;
+        height: 85px;
+        width: 12%;
+        padding-top: 35px;
+        margin-top: 4%;
+    }
+    .navbox:hover {
+        border: 1px solid #cccccc;
+    }
+
+    #nav2 {
+        /* background-color: #ee5a05; */
+        background-color: #9b1414;
+        color: #f3f3f3;
+        /* width: 400px; */
+    }
+    #nav2box {
+        display: flex;
+        width: 375px;
+        padding-left: 2px;
+        justify-content: space-between;
+    }
+    #navbox1:hover {
+        border: 1px solid #cccccc;
     }
     #serviceSection {
         height: 1800px;
@@ -482,10 +589,15 @@ footer h2 {
         height: 2000px;
     }
 
-   
+    #nav2 {
+        /* background-color: #ee5a05; */
+        background-color: #9b1414;
+        color: #f3f3f3;
+        /* width: 400px; */
+    }
 }
 
-@media (min-width: 610px) and(max-width: 830px) {
+@media (min-width: 651px) and(max-width: 830px) {
     * {
         margin: 0;
         padding: 0;
@@ -497,13 +609,7 @@ footer h2 {
         width: 100%;
     }
 
-    .navbox:hover {
-        border: 1px solid #cccccc;
-    }
-
-    #navbox1:hover {
-        border: 1px solid #cccccc;
-    }
+    
 
     #nav1 {
         /* border: 2px solid #000205; */
