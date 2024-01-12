@@ -77,3 +77,25 @@ function normalImg6(x) {
 function remover2(x){
     document.getElementById('nav1').style.position = "sticky";
 }
+let slideIndex = 2;
+showSlides(slideIndex);
+function currentSlide(n){
+    showSlides(slideIndex = n);
+}
+function showSlides(n){
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dots");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        // console.log(style.length);
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        console.log(dots.length);
+        dots[i].className = dots[i].className.replace("active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+}
