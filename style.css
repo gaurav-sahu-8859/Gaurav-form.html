@@ -4,10 +4,11 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body{
-     /* overflow: hidden;  */
-     background-color: #f3f3f3;
+body {
+    /* overflow: hidden;  */
+    background-color: #f3f3f3;
 }
+
 #nav1 {
     /* border: 2px solid #000205; */
     /* background-color: #10437e; */
@@ -184,7 +185,7 @@ nav a {
     color: #f3f3f3;
     height: 50px;
     width: 10%;
-    padding-top: 50px;
+    padding-top: 45px;
 
 }
 
@@ -277,7 +278,8 @@ nav a {
     width: 96%;
     display: inline-flex
 }
-#aboutComment2{
+
+#aboutComment2 {
     /* display: block; */
     background-color: #ffffff;
     /* border: 1px solid; */
@@ -285,14 +287,15 @@ nav a {
     margin: -5% 0% 1% 1%;
     width: 97.8%;
 }
-#aboutComment2 h1{
+
+#aboutComment2 h1 {
     border: none;
     padding-bottom: 1%;
 }
 
-#aboutComment2 p{
+#aboutComment2 p {
     /* background-color: #f3f3f3; */
-    margin-left: 25% ;
+    margin-left: 25%;
     /* background-color: #fff; */
     text-align: justify;
     font-size: 20px;
@@ -304,7 +307,7 @@ nav a {
     animation-timing-function: ease-in-out;
 }
 
-#welcomeImg{
+#welcomeImg {
     border: none;
     position: relative;
     height: 450px;
@@ -312,7 +315,8 @@ nav a {
     z-index: -1;
     /* margin-right: 0.15%; */
 }
-#welcomeSection{
+
+#welcomeSection {
     background-color: #ffffff;
     margin: -5% 0% 0% 15%;
     padding: 30px;
@@ -320,46 +324,104 @@ nav a {
     /* z-index: 1; */
     /* position: absolute; */
     text-align: justify;
+    position: relative;
+    animation-name: welcomeAnima;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
 }
-#welcomeSection p{
+
+#welcomeSection p {
     padding-top: 5px;
     padding-bottom: 10px;
     /* margin-right: 0.15%; */
 }
-#ourSection{
+
+@keyframes welcomeAnima {
+   0%   {left: -25%;}
+  25%  {left: -15%;}
+  50%  {left: -8%;}
+  100% {left: 0%;}
+}
+
+#ourSection {
     width: 100%;
     margin-top: 25px;
 }
-.ourSection h2{
+
+.ourSection h2 {
     text-align: center;
 
 }
-.ourSection div{
+
+.ourSection div {
     width: 45%;
-    background-color:#ffffff;
+    background-color: #ffffff;
     padding: 2%;
 }
-.ourSection:nth-child(1){
+
+.ourSection:nth-child(1) {
     display: flex;
     justify-content: space-evenly;
     width: 99.8%;
+    /* position: relative;
+    animation-name: ourAnima;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out; */
 }
-.ourSection img{
+
+
+.ourSection img {
     width: 40%;
     position: relative;
     z-index: -1;
 }
-.ourSection:nth-child(2){
+
+.ourSection:nth-child(2) {
     margin-top: -35px;
     display: flex;
     justify-content: space-evenly;
     width: 99.8%;
+    position: relative;
+    /* animation-name: ourAnima2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out; */
 }
+.ourSection div:nth-child(1) {
+    position: relative;
+    animation-name: ourAnima;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes ourAnima {
+    0%   {left: -25%;}
+   25%  {left: -15%;}
+   50%  {left: -8%;}
+   100% {left: 0%;}
+ }
+.ourSection div:nth-child(2) {
+    position: relative;
+    animation-name: ourAnima2;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+@keyframes ourAnima2 {
+    0%   {right: -25%;}
+   25%  {right: -15%;}
+   50%  {right: -8%;}
+   100% {right: 0%;}
+ }
+
 h1 {
     font-size: 60px;
     text-align: center;
     color: #741e04;
-    border-bottom: 1px solid #131210;
+    /* border-bottom: 1px solid #131210; */
+    /* box-shadow: 0px 10px; */
     padding: 5%;
     /* animation-name: aboutAnima;
     animation-duration: 6s;
@@ -390,19 +452,20 @@ h1 {
     animation-iteration-count: infinite; */
 }
 
-.serviceSection div {
+.servicetext{
     margin: 10% 10%;
     padding: 2%;
     height: 200px;
     width: 300px;
     background-size: cover;
-    border: 5px solid #131921;
+    /* border: 1px solid #131921; */
     background-color: #f3efef;
     cursor: pointer;
     border-radius: 20px;
     overflow: hidden;
+    box-shadow: 5px 5px;
     animation-name: aboutAnima;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
     animation-timing-function: ease-in-out;
 }
@@ -414,7 +477,7 @@ h1 {
     /* padding: 8%; */
     height: 120px;
     width: 280px;
-    border-radius: none;
+    /* border-radius: none; */
     /* overflow: hidden; */
 }
 
@@ -423,8 +486,10 @@ h1 {
     background-color: #f3efef;
 }*/
 .serviceSection:hover {
-    border: 2px solid #131921;
-    /* border: 1px solid #131921;  */
+    /* border: 2px solid #131921; */
+    /* border: 1px solid #131921; */
+    box-shadow: 10px 10px; 
+    padding-bottom: 1%;
     background-color: #f3efef;
     border-radius: 30px;
 }
@@ -435,7 +500,7 @@ h1 {
     color: #440303;
 }
 
-#callSection1{
+#callSection1 {
     width: 97%;
     margin-top: 5%;
     margin-left: 0.1%;
@@ -444,23 +509,26 @@ h1 {
     background-color: #0c7dbe;
     color: #ffffff;
 }
-#callSection1 div{
+
+#callSection1 div {
     /* background-color: #026e14; */
     margin-top: 2%;
     padding-bottom: 0.5%;
     display: flex;
     justify-content: space-evenly;
 }
-#callSection1 .callNumber{
+
+#callSection1 .callNumber {
     background-color: #528f81;
     font-size: 25px;
     padding-bottom: 2px;
     padding-right: 15px;
     padding-left: 15px;
     width: max-content;
-    
+
 }
-#callSection2{
+
+#callSection2 {
     width: 97%;
     margin-top: 0%;
     margin-left: 0.1%;
@@ -469,7 +537,8 @@ h1 {
     background-color: #0c7dbe;
     color: #ffffff;
 }
-#callSection2 .callicons{
+
+#callSection2 .callicons {
     /* background-color: #026e14; */
     margin-top: 0%;
     padding-bottom: 0.5%;
@@ -477,22 +546,44 @@ h1 {
     justify-content: space-evenly;
     color: #ffffff;
 }
-#callSection2 div h1{
+
+#callSection2 div h1 {
     color: #ffffff;
 }
 
-#callSection2 p{
+#callSection2 p {
     color: #ffffff;
     display: block;
     font-size: 80px;
 }
-
-.mySlides {display: none}
-.mySlides img{
-    vertical-align: middle;
-    width:50%
+#callSection2 span {
+    color: #ffffff;
+    display: block;
+    font-size: 22px;
+    font-weight: bolder;
 }
-.slideSection{
+.num{
+    background-color: #0c7dbe;
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.mySlides {
+    display: none
+}
+
+.mySlides img {
+    vertical-align: middle;
+    width: 50%
+}
+
+.slideSection {
     /* width: 50%; */
     height: 100%;
     position: relative;
@@ -506,7 +597,39 @@ h1 {
     width: 60%px;
 }
 
-.text{
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(27, 26, 26);
+    font-weight: bold;
+    font-size: 40px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.prev{
+    left: -5%;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: -8%;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(245, 236, 236, 0.2);
+}
+
+.text {
     color: #292626;
     background-color: #ffffff;
     font-size: 25px;
@@ -518,14 +641,16 @@ h1 {
     width: 55%;
     text-align: start;
 }
-.numbertext{
+
+.numbertext {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
 }
-.dots{
+
+.dots {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -535,17 +660,25 @@ h1 {
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+
 .active,
 .dots:hover {
     background-color: #717171;
 }
-.fade{
+
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
 @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 .bigsection {
@@ -553,7 +686,7 @@ h1 {
     width: 99.5%;
     padding-top: 5%;
     background: #131210;
-    border: solid #febd69;
+    /* border: solid #febd69; */
     border-radius: 45px;
     display: flex;
     justify-content: space-evenly;
@@ -657,17 +790,19 @@ footer h2 {
     color: #c08831;
 }
 
-@media screen and (min-width:100px) and (max-width: 650px){
+@media screen and (min-width:100px) and (max-width: 650px) {
     * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
+
     body {
         height: 100%;
         width: 100%;
-    
+
     }
+
     #nav1 {
         background-color: #045e6e;
         /* border: 1px solid #a7ce1a; */
@@ -677,7 +812,7 @@ footer h2 {
         padding-left: 0%;
         position: sticky;
     }
-    
+
     #nav1::before {
         /* border: 2px solid #000205; */
         /* background-color: #10437e; */
@@ -685,25 +820,26 @@ footer h2 {
         position: absolute;
         top: 0px;
         left: 10px;
-        bottom: 10px;  
+        bottom: 10px;
     }
 
     #nav1 ul {
         /* border: 1px solid #db0808; */
         padding-left: 0.5%;
-        
+
     }
 
     #navbox1 {
         margin-top: 4%;
         height: 85%;
     }
-    
+
     .namratalogo {
         margin-top: 40%;
         height: 20px;
         width: 95%;
     }
+
     #navbox2 {
         margin-top: 4%;
         padding-top: 35px;
@@ -719,6 +855,7 @@ footer h2 {
         padding-left: 3px;
         margin-top: 4%;
     }
+
     #navbox4 {
         display: none;
     }
@@ -731,7 +868,7 @@ footer h2 {
         /* margin-top: 15px; */
         padding-left: 0px;
     }
-    
+
     #navbox5 select {
         /* background-color: #10437e; */
         background-color: #045e6e;
@@ -740,7 +877,7 @@ footer h2 {
         height: 80px;
         width: 70px;
     }
-    
+
     #navbox6 {
         width: 12%;
         color: #cccccc;
@@ -749,7 +886,7 @@ footer h2 {
         padding-left: 0%;
         margin-top: 4%;
     }
-    
+
     #navbox7 {
         color: #f3f3f3;
         height: 85px;
@@ -757,6 +894,7 @@ footer h2 {
         padding-top: 35px;
         margin-top: 4%;
     }
+
     .navbox:hover {
         border: 1px solid #cccccc;
     }
@@ -767,22 +905,25 @@ footer h2 {
         color: #f3f3f3;
         /* width: 400px; */
     }
+
     #nav2box {
         display: flex;
         width: 375px;
         padding-left: 2px;
         justify-content: space-between;
     }
+
     #navbox1:hover {
         border: 1px solid #cccccc;
     }
+
     #serviceSection {
         padding-top: 0%;
         height: 1805px;
         align-items: center;
     }
 
-    #callSection1 div{
+    #callSection1 div {
         /* background-color: #026e14; */
         margin-top: 2%;
         padding-bottom: 0.5%;
@@ -790,11 +931,12 @@ footer h2 {
         /* justify-content: space-evenly; */
     }
 
-    #callSection1 .callNumber{
+    #callSection1 .callNumber {
         margin-left: 30%;
-        
+
     }
-    #callSection2 .callicons{
+
+    #callSection2 .callicons {
         /* background-color: #026e14; */
         margin-top: 0%;
         padding-bottom: 0.5%;
@@ -802,6 +944,7 @@ footer h2 {
         /* justify-content: space-evenly; */
         color: #ffffff;
     }
+
     .bigsection {
         height: 2000px;
     }
@@ -812,20 +955,23 @@ footer h2 {
         color: #f3f3f3;
         /* width: 400px; */
     }
-    .slideSection{
+
+    .slideSection {
         margin-left: 0%;
         margin-right: 0%;
         /* transform: translate3d(0px, 0px, 0px);
         transition: all 0.25s ease 0s; */
         width: 100%;
     }
-    .text{
-        width: 60%;
+
+    .text {
+        width: 59%;
         font-size: 15px;
         top: -4%;
         right: -5%;
     }
-    footer{
+
+    footer {
         display: inline-table;
         width: 100%;
     }
@@ -947,24 +1093,27 @@ footer h2 {
     #serviceSection {
         height: 1900px;
     }
+
     .bigsection {
         height: 1100px;
     }
-    .slideSection{
+
+    .slideSection {
         margin-left: 5%;
         margin-right: 5%;
         /* transform: translate3d(0px, 0px, 0px);
         transition: all 0.25s ease 0s; */
         width: 90%;
     }
-    .text{
+
+    .text {
         width: 65%;
         top: 1%;
         right: -5%;
     }
 
 }
- 
+
 @media screen and (min-width:811px) and (max-width: 1192px) {
     * {
         margin: 0;
@@ -1063,14 +1212,16 @@ footer h2 {
         padding-top: 5%;
         */
     }
-    .slideSection{
+
+    .slideSection {
         margin-left: 10%;
         margin-right: 10%;
         /* transform: translate3d(0px, 0px, 0px);
         transition: all 0.25s ease 0s; */
         width: 80%;
     }
-    .text{
+
+    .text {
         width: 55%;
         top: 4%;
         right: 4%;
