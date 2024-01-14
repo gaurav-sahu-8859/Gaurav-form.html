@@ -35,7 +35,8 @@
                         <option value="4">SEO</option>
                     </select>
                     <input type="text" placeholder="search" id="search">
-                    <input type="button" value="search" id="button">
+                    <!-- <input type="button" value="search" id="button"> -->
+                    <button id="button"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
             </li>
             <li id="navbox5" class="navbox">
@@ -85,10 +86,10 @@
     <div>
         <img src="about-goal.jpg" alt="" id="aboutImg">
     </div>
-    <div id="aboutComment">
+    <!-- <div id="aboutComment">
         <h4>You are on Namrata Univarsal. </h4>
         <a href="https://namratauniversal.com/"> Click here to go to namrataunivarsal.in</a>
-    </div>
+    </div> -->
     <div id="aboutComment2">
         <h1>About Us</h1>
         <p>At Namrata Universal We Deliver With Focus On Quality, Integrity And Long Term Relation. We have experienced
@@ -108,7 +109,7 @@
             with wallet friendly charges. Strong ground support and extensive network keeps us always a step a head. We
             are always on Toes and this attitude has given us a strong presence in Indian Subcontinent.</p>
     </div>
-    <div id="ourSection">
+    <div id="ourSection" onmouseover="remover1(this)" onmouseout="remover2(this)">
         <div class="ourSection">
             <img src="storyImg.jpg" alt="our Story">
             <img src="goalImg.jpg" alt="our Goal">
@@ -137,7 +138,7 @@
     <h1 id="services">Services</h1>
     <div id="serviceSection" id="mobileres1">
         <div class="serviceSection" onmouseover="bigImg1(this)" onmouseout="normalImg1(this)">
-            <div id="serviceSection1">
+            <div class="servicetext" id="serviceSection1">
                 <h2>Business Portal Development</h2>
                 <p>At Namrata Universal, we offer mobile-compliant Business Portal Development services leveraging a
                     plethora of frameworks including Drupal, WordPress, Magento, AngularJS and much more.</p>
@@ -145,7 +146,7 @@
             </div>
         </div>
         <div class="serviceSection" onmouseover="bigImg2(this)" onmouseout="normalImg2(this)">
-            <div id="serviceSection2">
+            <div class="servicetext" id="serviceSection2">
                 <h2>Mobile Application Development</h2>
                 <p>We have designed and developed Android apps in categories, and productivity, shopping, social
                     messaging, gaming and entertainment, news and publishing and so on.</p>
@@ -153,7 +154,7 @@
             </div>
         </div>
         <div class="serviceSection" onmouseover="bigImg3(this)" onmouseout="normalImg3(this)">
-            <div id="serviceSection3">
+            <div class="servicetext" id="serviceSection3">
                 <h2>Website Development</h2>
                 <p>We create websites that appeal to your sense of style, with intuitive layouts and navigation. We also
                     ensure that your website is a search engine friendly so that it attracts customers and sales.</p>
@@ -161,7 +162,7 @@
             </div>
         </div>
         <div class="serviceSection" onmouseover="bigImg4(this)" onmouseout="normalImg4(this)">
-            <div id="serviceSection4">
+            <div class="servicetext" id="serviceSection4">
                 <h2>Custom Software</h2>
                 <p>Custom software development is the process of designing, creating, deploying and maintaining software
                     for a specific set of users, functions. We offer quality and valuable price in our software and
@@ -170,7 +171,7 @@
             </div>
         </div>
         <div class="serviceSection" onmouseover="bigImg5(this)" onmouseout="normalImg5(this)">
-            <div id="serviceSection5">
+            <div class="servicetext" id="serviceSection5">
                 <h2>Graphic Designing</h2>
                 <p>Graphic design is the most common way of making visual content. The specialty of visual communicate
                     is fundamental, especially for brands looking to connect with their target audience, and graphic
@@ -179,7 +180,7 @@
             </div>
         </div>
         <div class="serviceSection" onmouseover="bigImg6(this)" onmouseout="normalImg6(this)">
-            <div id="serviceSection6">
+            <div class="servicetext" id="serviceSection6">
                 <h2>App Design</h2>
                 <p>Our experts cover an entire cycle of mobile app development, including business analysis, UX/UI
                     design and development of your mobile application From ideation to final polish, our UX/UI design
@@ -188,7 +189,7 @@
             </div>
         </div>
     </div>
-    <div id="callSection1" onmouseover="remover1(this)" onmouseout="remover2(this)">
+    <div id="callSection1" onmouseover="numAdder()">
         <h2>CALL TO ACTION</h2>
         <p>Please contact us for any queries.</p>
         <div>
@@ -197,23 +198,31 @@
             <div class="callNumber">Call us:-9987654321</div>
         </div>
     </div>
-    <div id="callSection2" onmouseover="remover1(this)" onmouseout="remover2(this)">
+    <div id="callSection2" onmouseover="numAdder()"><!--  onmouseout="numRemover -->
         <div class="callicons">
             <div>
                 <p><i class="fa-solid fa-user"></i></p>
-                <h1>56</h1>
+                <!-- <h1 id="num2">56</h1> -->
+                <input type="text" value="0" class="num" id="num2">
+                <span>Our Staffs</span>
             </div>
             <div>
                 <p><i class="fa-solid fa-user-group"></i></p>
-                <h1>5200</h1>
+                <!-- <h1 id="num1">5200</h1> -->
+                <input type="text" value="0" class="num" id="num1">
+                <span>Our Clients</span>
             </div>
             <div>
                 <p><i class="fa-solid fa-check"></i></p>
-                <h1>3811</h1>
+                <!-- <h1>3811</h1> -->
+                <input type="text" value="0" class="num" id="num3">
+                <span>Completed Projects</span>
             </div>
             <div>
                 <p><i class="fa-solid fa-arrow-trend-up"></i></p>
-                <h1>24*7</h1>
+                <!-- <h1>24*7</h1><br> -->
+                <input type="text" value="24*7" class="num" id="num4">
+                <span>Support</span>
             </div>
         </div>
     </div>
@@ -254,6 +263,8 @@
                 </P>
             </div>
         </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
     <div style="text-align:center">
         <span class="dots" onclick="currentSlide(1)"></span>
@@ -360,6 +371,13 @@
             <h4>phone: 1234567899, 9987654321</h4>
         </div>
     </footer>
+    <script>
+        window.onload = function() {
+          const element = document.createElement("script");
+          element.src = "myScript.js";
+          document.body.appendChild(element);
+        };
+        </script>
     <script src="index.js"></script>
 </body>
 
